@@ -1,0 +1,28 @@
+package PrimeNumber;
+
+public class Prime {
+
+	public static void primeNo(int range) {
+
+		for (int i = 2; i < range; i++) {
+			int count = 0;
+
+			for (int j = 2; j < i; j++) {
+				if (j % 2 == 0) {
+					count++;
+				}
+			}
+			if (count == 0) {
+				System.out.println(i + " ");
+			}
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		primeNo(100);
+
+	}
+
+}

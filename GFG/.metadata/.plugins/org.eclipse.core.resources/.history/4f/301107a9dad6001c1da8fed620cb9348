@@ -1,0 +1,24 @@
+
+public class CountNumber {
+
+	static int CountDigits(long n) {
+
+		int count = 0;
+		while (n != 0) {
+			n = n / 10;
+			count++;
+
+		}
+
+		return count;
+
+	}
+
+	public static void main(String[] args) {
+
+		long n = 123456789;
+		System.out.println(CountDigits(n));
+
+	}
+
+}

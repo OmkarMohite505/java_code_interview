@@ -1,0 +1,36 @@
+package CheckPalindrome;
+
+public class palin {
+
+	public boolean isPalindrome(int num) {
+
+		int org = num, rev = 0, rem;
+
+		if (num < 0)
+			return false;
+
+		while (num != 0) {
+			org = num;
+			rem = num % 10;
+			rev = (rev * 10) + rem;
+			num = num / 10;
+
+		}
+		return org == rev;
+
+	}
+
+	public void main(String[] args) {
+
+		if (isPalindrome(121)) {
+
+			System.out.println("true");
+
+		} else {
+
+			System.out.println("false");
+		}
+
+	}
+
+}
