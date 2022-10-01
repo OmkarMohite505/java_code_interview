@@ -111,5 +111,23 @@ public class BinarySearchTree {
 		
 		
 	}
+	
+	public void preOrder() {
+		Node[] stack = new Node[100];
+		int top = -1;
+		Node temp = root;
+		while(top != -1 && root != null) {
+			while(temp != null) {
+				System.out.print(temp.getData()+" ");
+				stack[++top] = temp;
+				temp = temp.getLeft();
+			}
+			temp = stack[top--].getRight();
+		}
+		System.out.println();
+	}
+	public void inOrder() {
+		
+	}
 
 }

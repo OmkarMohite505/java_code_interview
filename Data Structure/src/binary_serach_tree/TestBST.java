@@ -8,6 +8,12 @@ public class TestBST {
 		System.out.println(bst.insert(60));
 		System.out.println(bst.insert(40));
 		System.out.println(bst.insert(10));
+		bst.insert(5);
+		bst.insert(70);
+		
+		bst.preOrder(bst.getRoot());
+		System.out.println();
+		bst.inOrder(bst.getRoot());
 	}
 
 }
