@@ -1,4 +1,4 @@
-
+package inheritance;
 
 class A{
 	public void m1() {

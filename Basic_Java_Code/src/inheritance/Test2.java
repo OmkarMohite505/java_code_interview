@@ -1,4 +1,4 @@
-
+package inheritance;
 class Parent {
 	String name;
 
