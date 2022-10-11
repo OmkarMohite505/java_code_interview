@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,6 +13,11 @@ public class CovertArrayToList {
 		Integer[] arr = {1,2,3,45,6};
 		List<Integer> li = new ArrayList<Integer>();
 		Collections.addAll(li, arr);
+		
+		
+		
+		
+		System.out.println(Arrays.toString(arr));
 	}
 
 }
