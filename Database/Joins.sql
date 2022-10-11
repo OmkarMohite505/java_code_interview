@@ -16,8 +16,6 @@ course varchar(20)
 
 drop table courses;
 
-insert into students (roll_no, name, address, phone age)
-values()
 
 insert into students values (1, 'Kunal', 'Pune', 1988, 24);
 insert into students values (3, 'omkar', 'Pune', 9999, 24);
@@ -61,6 +59,36 @@ select students.name, students.address, students.phone, courses.course_id,
 from students
 right join courses
 on students.roll_no = courses.roll_no;
+
+select students.name, students.address, students.phone, courses.course_id,
+		courses.course_name, courses.faculty
+from students
+left join courses
+on students.roll_no = courses.roll_no
+union
+select students.name, students.address, students.phone, courses.course_id,
+		courses.course_name, courses.faculty
+from students
+right join courses
+on students.roll_no = courses.roll_no;
+
+select students.name, students.address, students.phone, courses.course_id,
+		courses.course_name, courses.faculty
+from students
+left join courses
+on students.roll_no = courses.roll_no;
+
+select students.name, students.address, students.phone, courses.course_id,
+		courses.course_name, courses.faculty
+from students
+cross join courses;
+
+select students.name, students.address, students.phone, courses.course_id,
+		courses.course_name, courses.faculty
+from students
+cross join courses
+
+
 
 
 
