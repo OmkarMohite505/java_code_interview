@@ -23,7 +23,8 @@ public class TestEmployee {
 		list.forEach(e -> System.out.println(e));
 		
 		System.out.println();
-		list.sort(new AgeComparator());
+//		list.sort(new AgeComparator());
+		Collections.sort(list, new AgeComparator());
 		list.forEach(e -> System.out.println(e));
 	}
 
